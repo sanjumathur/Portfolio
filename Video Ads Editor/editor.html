@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+
+    <style> *{
+     
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+
+    }
+
+    .navbar{
+        display: flex;
+        padding: 0.5rem;
+        align-items: center;
+        justify-content: space-around;
+        height: 3.7rem;
+        font-size: 1.2rem;
+        background-color: black;
+       
+        width: auto;
+        position: sticky;
+        border-radius: 1rem ;
+       
+       
+    }
+
+    
+
+    .ilogo{
+        height: 10rem;
+        width: 10rem;
+        
+    }
+
+
+
+   
+
+    .menu a{
+        text-decoration: none;
+       margin-left:1rem;
+       margin-right: 1rem;
+       padding: 0.5rem;
+       
+       opacity: 0.95;
+       transition: 200ms;
+       border-radius: 1rem ;
+    }
+
+    .menu a:hover{
+        font-size: 1.2rem ;
+        box-shadow: 2px 2px white ;
+        opacity: 1;
+        color: white;
+        border: 1px solid white;
+        background-color: blue;
+        border-radius: 0.2rem ;
+
+
+    }
+
+
+
+    .btn button{
+        border: none;
+        background-color: blue;
+        color: white;
+        border: 0.1rem solid white;
+        border-radius: 0.4rem;
+        padding-right: 2px;
+        padding: 10px;
+        
+    }
+
+    .content{
+        background-color: blue;
+        position: relative;
+        height: 18rem;
+        margin-top: 0px;
+        display: flex;
+        justify-content: space-around;
+        border-radius: 1rem;
+        flex-wrap: wrap;
+        
+    
+    }
+    .content img{
+        height: 20rem;
+        width: 20rem;
+        margin-top: 90px;
+        border-radius: 1rem;
+        border: 2px solid white;
+        box-shadow: 2px 3px white;
+       
+        
+    }
+
+    .name{
+      margin-top: 50px;
+      font-size: 2rem;
+      line-height: 2.5rem;
+      
+    }
+
+    .downContent{
+        background-color: black;
+        color: white;
+        height: 100%;
+        border-radius: 2rem;
+    }
+
+    .aboutme{
+        width: 40%;
+        height: 24rem;
+        margin-left: 120px;
+        padding-top: 1.25rem;
+        position: relative;
+        top: 2rem;
+
+    }
+    .btnIcon{
+        display: flex;
+        position: relative;
+        bottom: 15rem;
+
+    }
+
+    .downContent button{
+        background-color: blue;
+        color: white;
+        border: none;
+        border: 1px solid white;
+        padding: 0.5rem;
+        font-size: 1rem;
+        border-radius: 0.4rem;
+        padding-left: 0.9rem;
+        padding-right: 0.9rem;
+    }
+
+     .btnTitle button{ 
+        position: relative;
+        bottom: 120px;
+        left: 580px;
+        background-color: black;
+        color: white;
+        transition: 180ms;
+        
+    }
+
+    .btnTitle button:hover{ 
+       
+        background-color: blue;
+        color: white;
+        font-size: 17px;
+        box-shadow: 3px 4px blue;
+        
+    }
+
+    .btnPort{
+        position: relative;
+        left: 10.9rem;
+    }
+
+    .skill{
+        display: flex;
+        justify-content: space-around;
+        /* height: 20rem; */
+        background-color: blue;
+        position: relative;
+        bottom: 10rem;
+        margin: 1rem;
+        border-radius: 1rem;
+        flex-wrap: wrap;
+        padding-bottom: 1rem;
+    }
+
+    .s1 i{
+        font-size: 1.2rem;
+        padding: 0 2px;
+    }
+
+    .s2 i{
+        font-size: 2rem;
+        padding: 0 2px;
+    }
+    .s3 i{
+        font-size: 1.2rem;
+        padding: 0 2px;
+    }
+
+    .detailSkill{
+        width: 25rem;
+        position: relative;
+       right: 2rem;
+       padding: 1rem;
+
+    }
+
+    .detailSkill p{
+        
+       text-align: center;
+       
+
+    }
+
+
+    .edu{
+        background-color: blue;
+        margin: 1rem;
+        border-radius: 1rem;
+        /* height: 30rem; */
+        display: flex;
+        justify-content: space-around;
+        padding: 1rem;
+        position: relative;
+         bottom: 11.5rem;
+         flex-wrap: wrap;
+         padding-bottom: 10px;
+         margin-top: 2rem;
+    
+        
+    }
+
+    .eduLeft{
+        width: 400px;
+        padding: 1rem;
+    }
+
+    .eduRight{
+        width: 400px;
+
+    }
+    .bca{
+        background-color: rgb(12, 12, 12);
+        padding: 0.1rem;
+        border-radius: 1rem ;
+        text-align: center;
+       
+
+    }
+
+    .th{
+        background-color: rgb(12, 12, 12);
+        padding: 0.1rem;
+        border-radius: 1rem ; 
+        text-align: center;
+
+
+    }
+
+    .YouTube{
+        height: 250px;
+        width: 250px;
+        border-radius: 1rem;
+        border: 2px solid rgb(255, 0, 0);
+        box-shadow: 2px 3px red;
+       
+
+
+    }
+
+    .Todo{
+        height: 250px;
+        width: 250px;
+        border-radius: 1rem;
+        border: 2px solid rgb(255, 0, 0);
+        box-shadow: 2px 3px red;
+
+    }
+
+    .Portfolio{
+        height: 250px;
+        width: 250px;
+        border-radius: 1rem;
+        border: 2px solid rgb(255, 255, 255);
+        box-shadow: 2px 3px rgb(255, 255, 255);
+    }
+
+    .Spotify{
+        height: 250px;
+        width: 250px;
+        border-radius: 1rem;
+        border: 2px solid rgb(0, 255, 55);
+        box-shadow: 2px 3px rgb(0, 255, 55);
+    }
+
+    .exp{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        background-color: blue;
+        margin: 1rem;
+        border-radius: 1rem;
+        padding: 1rem;
+        position: relative;
+        bottom: 13rem;
+        margin-top: 2rem;
+        
+        
+    }
+    .expDown{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+        background-color: blue;
+        margin: 1rem;
+        border-radius: 1rem;
+        padding: 1rem;
+        position: relative;
+        bottom: 13.5rem;
+    
+    }
+
+  .expLeft{
+    width: 400px;
+    text-align: center;
+  }
+
+  .footer01{
+    display: flex;
+    justify-content: center;
+     align-items: baseline;
+   
+  }
+
+  .footer01 i{
+    padding: 0 2px;
+
+  }
+  .footer{
+    text-align: center;
+    margin:  0 2rem;
+    padding: 0 2rem 0 2rem;
+
+    
+  }
+  .outer{
+    position: relative;
+    bottom: 10rem;
+ 
+   
+  }
+  .s1 i{
+    text-align: center;
+  }
+
+@media(max-width : 1000px){
+    .btnTitle {
+        display : none; }
+        .menu{
+        display : none; }
+        .skill{
+            position: relative;
+            top: 7rem;
+              margin-bottom: -1.2rem;
+        }
+
+        .edu{
+            position: relative;
+            top: 7rem;
+            margin-bottom: -1.2rem;
+
+        }
+        .exp{
+            position: relative;
+            top: 7rem;
+            /* margin-bottom: -1.2rem; */
+
+        }
+        .expDown{
+            position: relative;
+            top: 7rem;
+           margin-bottom: 1rem;
+
+        }
+        .outer{
+            position: relative;
+            top: 7rem;
+            background-color: black;
+            padding: 1rem;
+            border-radius: 2px;
+        }
+        .aboutme{
+            position: relative;
+            top: 22rem;
+            width: 20rem;
+            text-align: center;
+            left: -6.5rem;
+            margin-top: 1rem;
+            
+        }
+        .img{
+            position: relative;
+            top: -2rem;
+           
+        }
+
+        .btnIcon{
+            position: relative;
+            top: 7rem;
+            left: -3.2rem;
+            
+
+        }
+        .downContent{
+           padding-top: 4px;
+         
+        }
+
+        .detailSkill{
+            position: relative;
+            left:8px;
+            padding-right: 1.5rem;
+        }
+        .detailSkill h1 {
+          text-align: center;
+        }
+
+    }
+
+
+    
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="logo">
+                <img class="ilogo" src="./Asset of Editor file/Black and White Simple Typographic Phantom Halloween Logo.png" alt="logo">
+               
+            </div>
+            <div class="menu">
+                <a href="#"> Home</a>
+                <a href="#"> About me</a>
+                <a href="#"> My Portfolio </a>
+                <a href="#">Testomonlio</a>
+                <a href="#"> Contact</a>
+            </div>
+            <div class="btn">
+                <button> Work With Me! <i class="fa-solid fa-paper-plane"></i></button>
+            </div>
+
+           
+        </div>
+        <div class="content">
+            <div class="name"> <h1> I'm Sanju </h1>
+                <h1>Mathur</h1>
+            </div>
+            <div class="img"> <img src="./Asset of Editor file/1706543668815.jpeg" alt="img"></div>
+        </div>
+
+        <div class="downContent">
+            <div class="aboutme"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ipsa, quae magni assumenda magnam laboriosam, sequi impedit fuga, quam reprehenderit non? Eaque esse, dolorum expedita sequi sit praesentium debitis eligendi.</div>
+            <div class="btnIcon">
+                <div class="btnPort"><button>My Portfolio</button></div>
+    
+                
+                <div class="btnTitle"><button> Font-end Developer </button></div>
+            </div>
+
+            <div class="skill"> 
+                <div class="detailSkill">
+                    <h1> My Skills</h1>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus excepturi esse voluptatum, repellendus quia ab, provident incidunt ullam totam molestiae beatae? Ab aspernatur quas quae, in quam sit earum accusamus!</p>
+                </div>
+                <div class="sectionSkill">
+                    <div class="s1">
+                        <h2> Font-End Skills</h2>
+                        <i class="fa-brands fa-html5"></i>
+                        <i class="fa-brands fa-css3-alt"></i>
+                        <i class="fa-brands fa-square-js"></i>
+                        <i class="fa-brands fa-react"></i>
+
+                    </div>
+                    <div class="s2">
+                        <h2> Back-End Skills</h2>
+                        <i class="fa-brands fa-node"></i>
+                    </div>
+                    <div class="s3"> 
+                        <h2>Tools</h2>
+                        <i class="fa-brands fa-github"></i>
+                        <i class="fa-brands fa-git-alt"></i>
+                    </div>   
+                </div>
+            </div>
+
+            <div class="edu">
+                <div class="eduLeft">
+                    <h1>Education</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea praesentium id ducimus hic nobis sequi, eos inventore voluptatem asperiores quo quibusdam quas minus sapiente incidunt voluptatibus ipsam recusandae fugit molestias?</p>
+                    <button>Read me more</button>
+                </div>
+
+                <div class="eduRight">
+                    <div class="edu1"> 
+                        <div class="th">
+                            <h2>2017 - 2019</h2>
+                            <h3> CLASS 12th </h3>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque consequatur exercitationem ratione dolor nostrum laudantium voluptas temporibus officia unde dicta modi, eveniet eum enim tempore. Saepe harum magnam reiciendis nisi?</p>                       
+                    </div>
+                    <div class="edu2">
+                        <div class="bca">
+                            <h2>2021 - 2024</h2>
+                            <h3> Bechlor Of Computer Application </h3>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque consequatur exercitationem ratione dolor nostrum laudantium voluptas temporibus officia unde dicta modi, eveniet eum enim tempore. Saepe harum magnam reiciendis nisi?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="exp">
+                <div class="expLeft">
+                    <h1>My Projects </h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas ab minus eligendi impedit error sit rem, quasi eius porro vero accusantium officia repellat debitis nulla autem. Facere, qui vero! Asperiores.</p>
+                </div>
+                <div class="expRight">
+                    <h3>Spotify Clone</h3>
+                    <img class="Spotify" src="./Asset of Editor file/img1.jpg" alt="Project">
+                    
+                </div>
+                
+            </div>
+            <div class="expDown">
+                <div class="exp1">
+                    <h3>My Portfolio</h3>
+                    <img class="Portfolio" src="./Asset of Editor file/img4.jpg" alt="Project">
+                    
+                </div>
+                <div class="exp2">
+                    <h3>YouTube Clone</h3>
+                    <img class="Todo" src="./Asset of Editor file/img2.jpg" alt="Project">
+                    
+                </div>
+                <div class="exp3">
+                    <h3>To-Do List App</h3>
+                    <img class="YouTube" src="./Asset of Editor file/img3.jpg" alt="Project">
+                    
+                </div>
+            </div>
+            <div class="outer">
+            <div class="footer">
+                <H1> Thanks For Watching </H1>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis hic eos et minus ea enim deleniti aperiam dolorem ex quae voluptatum, quisquam facilis itaque! Ipsam ullam aperiam molestiae nulla deserunt.</P>
+            
+                <h3>Connect with me</h3>
+                <div class="footer01">
+                   
+                    <div class="footi">
+                        <i class="fa-brands fa-linkedin"></i>
+                        <i class="fa-brands fa-github"></i>
+                        <i class="fa-brands fa-square-x-twitter"></i>
+                        <i class="fa-brands fa-square-instagram"></i>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+</body>
+</html>
